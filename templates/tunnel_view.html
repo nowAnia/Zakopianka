@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div clas="size">
+        <h1>Speed control</h1>
+        <table border="1">
+            <tr>
+                <th>Tunnel</th>
+                <th>{{tunnel.name}}</th>
+            </tr>
+          <tr>
+            <th>Registration</th>
+            <th>Enter time</th>
+            <th>Speed</th>
+          </tr>
+            {% for x in car_drives %}
+            <tr class="{{'over_limit' if x.exit_time and x.speed() > tunnel.speed }}">
+                <td>{{x.registration}}</td>
+                <td>{{x.enter_time}}</td>
+                <td>
+                    {% if x.exit_time %}
+                        {{ x.speed() }} km/h
+                    {% else %}
+                        Car is still driving
+                    {% endif %}
+                </td>
+              </tr>
+  {% endfor %}
+
+
+</table>
+
+
+    </div>
+            <p ><a id="come" href = "/tunnels" > Come back to tunnels </a></p>
+
+{% endblock %}
