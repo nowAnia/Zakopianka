@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" modified="2024-01-07T18:49:44.781Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mUYhHgLRZGd8O6QQ-Cll" version="22.1.17" type="device">
+  <diagram name="Strona-1" id="nEcdRuQNpDW0g5NkV9Rs">
+    <mxGraphModel dx="830" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-3" value="&lt;h3&gt;Flask&lt;b&gt; &lt;/b&gt;backend&lt;/h3&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-4" value="&lt;b&gt;GET&lt;/b&gt; &lt;i&gt;/tunnels&amp;nbsp;&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kiFYB3nbyJNl-oSR3Wmo-3">
+          <mxGeometry y="30" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-5" value="&lt;b&gt;GET&lt;/b&gt; &lt;i&gt;/tunnels/:id&amp;nbsp;&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kiFYB3nbyJNl-oSR3Wmo-3">
+          <mxGeometry y="60" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-6" value="&lt;b&gt;POST&lt;/b&gt; &lt;i&gt;/enter_car_drives&amp;nbsp;&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kiFYB3nbyJNl-oSR3Wmo-3">
+          <mxGeometry y="90" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-11" value="&lt;b&gt;PUT&lt;/b&gt; &lt;i&gt;/exit_car_drives&amp;nbsp;&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="kiFYB3nbyJNl-oSR3Wmo-3">
+          <mxGeometry y="120" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-7" value="SQLite" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="590" y="100" width="80" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.026;entryY=0.315;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="kiFYB3nbyJNl-oSR3Wmo-4" target="kiFYB3nbyJNl-oSR3Wmo-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-9" value="SQLAlchemy" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kiFYB3nbyJNl-oSR3Wmo-8">
+          <mxGeometry x="-0.1201" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-13" value="Browser" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.329;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" target="kiFYB3nbyJNl-oSR3Wmo-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-15" value="Jinja" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kiFYB3nbyJNl-oSR3Wmo-14">
+          <mxGeometry x="-0.1069" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="kiFYB3nbyJNl-oSR3Wmo-16" target="kiFYB3nbyJNl-oSR3Wmo-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-18" value="JSON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kiFYB3nbyJNl-oSR3Wmo-17">
+          <mxGeometry x="-0.3687" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kiFYB3nbyJNl-oSR3Wmo-16" value="Traffic Generator" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="120" y="290" width="80" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
