@@ -19,14 +19,16 @@ is then sent to the backend which consolidates the rest of necessary information
 I am using a simple web development stack consisting of [sqlite](https://www.sqlite.org/index.html) database and a [flask](https://flask.palletsprojects.com/en/3.0.x/) server with [sqlalchemy](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/) as ORM 
 between them and [jinja](https://jinja.palletsprojects.com/en/3.1.x/) templates to render html. The graphic below depicts mentioned components. 
 
--- placeholder --
+![app_diagram drawio (1)](https://github.com/nowAnia/Zakopianka/assets/152620390/e3ce4d00-134e-44a7-b8e7-0f56f30199e9)
+
 
 ### Database structure
 
 The data is modeled using two entities: **Tunnels** and **CarDrives**.
 There is one-to-many relationship between them. The database diagram is shown below.
 
---placeholder--
+![zakopianka_erm drawio (1)](https://github.com/nowAnia/Zakopianka/assets/152620390/0374c2b4-b489-4325-b2bd-5fbc881d115a)
+
 
 ### API
 The backend responds on the following endpoints:
